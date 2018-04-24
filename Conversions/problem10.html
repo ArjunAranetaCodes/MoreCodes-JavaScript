@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title></title>
+ </head>
+ <body>
+
+<script type="text/javascript">
+//Problem 10: Write a program that converts a decimal number to octal number.
+var dec = 256;
+var oct = "";
+
+while (dec > 0){
+ oct = (dec % 8).toString() + oct;
+ dec = parseInt(dec / 8);
+}
+
+document.write(oct);
+</script>
+ </body>
+</html>
