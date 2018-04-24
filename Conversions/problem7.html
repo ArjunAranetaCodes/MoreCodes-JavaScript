@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title></title>
+ </head>
+ <body>
+
+<script type="text/javascript">
+//Problem 7: Write a program that converts a decimal number to binary number.
+var dec = 10;
+var binary = "";
+
+while (dec > 0){
+ binary = (dec % 2).toString() + binary;
+ dec = parseInt(dec / 2);
+}
+
+document.write(binary);
+</script>
+ </body>
+</html>
